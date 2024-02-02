@@ -1,0 +1,32 @@
+version: "3.3"
+services:
+  ghost:
+    build: .
+    image: ghosty
+    restart: always
+    ports:
+      - "2368:2368"
+    depends_on:
+      - db
+    environment:
+      url: http://localhost:2368
+      database__client: mysql
+      database__connection__host: db
+      database__connection__user: ghost
+      database__connection__password: ghostdbpass
+      database__connection__database: ghostdb
+    volumes:
+      - ./content:/var/lib/ghost/content
+    entrypoint: ["wait-for-sql.sh", "db", "--", "docker-entrypoint.sh"]
+    command: ["node", "current/index.js"]
+
+  db:
+    image: mysql:8.0
+    restart: always
+    environment:
+      MYSQL_ROOT_PASSWORD: ghostrootpass
+      MYSQL_USER: ghost
+      MYSQL_PASSWORD: ghostdbpass
+      MYSQL_DATABASE: ghostdb
+    volumes:
+      - ./mysql:/var/lib/mysql
