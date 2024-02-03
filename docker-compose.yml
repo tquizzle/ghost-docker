@@ -3,15 +3,14 @@ services:
   ghost:
     build: .
     image: ghost-docker
-    env_file:
-      - .env
+    env_file: .env
     restart: always
     ports:
-      - "2369:2369"
+      - ${ghost_port}
     depends_on:
       - db
     environment:
-      url: http://localhost:2369
+      url: ${ghost_url}
       database__client: mysql
       database__connection__host: db
       database__connection__user: ${db_user}
@@ -24,8 +23,7 @@ services:
 
   db:
     image: mysql:8.0
-    env_file:
-      - .env
+    env_file: .env
     restart: always
     environment:
       MYSQL_ROOT_PASSWORD: ${mysql_root_pass}
