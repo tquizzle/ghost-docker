@@ -4,6 +4,8 @@
 A simple way to spin up a Ghost site using MySQL as the backend and docker-compose.
 
 All data stays local in directory.
+`mysql` for all DB data.
+`content` for all Ghost related data.
 
 ## Env
 Use the included .env file to define your variables.
@@ -12,4 +14,6 @@ Use the included .env file to define your variables.
 
 - [@tquizzle] (https://github.com/tquizzle)
 
-[![Docker Image TQ CI](https://github.com/tquizzle/ghost-docker/actions/workflows/cicd.yml/badge.svg)](https://github.com/tquizzle/ghost-docker/actions/workflows/cicd.yml)
+### Does it build?
+
+[![Docker Image CI](https://github.com/tquizzle/ghost-docker/actions/workflows/docker-image.yml/badge.svg)](https://github.com/tquizzle/ghost-docker/actions/workflows/docker-image.yml)
