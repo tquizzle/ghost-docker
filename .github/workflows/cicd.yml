@@ -33,5 +33,5 @@ jobs:
       with:
         context: .
         file: ./Dockerfile
-        push: true
+        push: false
         tags: ${{ secrets.DOCKER_USERNAME }}/ghost-docker:latest
