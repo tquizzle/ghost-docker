@@ -34,12 +34,4 @@ jobs:
         context: .
         file: ./Dockerfile
         push: true
-        tags: ${{ secrets.DOCKER_USERNAME }}/ghost-docker:latest 
-      
-    - name: Push it - Edge
-      uses: docker/build-push-action@v5.1.0
-      with:
-        context: .
-        file: ./Dockerfile-edge.dockerfile
-        push: true
-        tags: ${{ secrets.DOCKER_USERNAME }}/ghost-docker:edge 
+        tags: ${{ secrets.DOCKER_USERNAME }}/ghost-docker:latest
