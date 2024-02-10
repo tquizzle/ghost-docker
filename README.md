@@ -24,13 +24,11 @@ All data stays local in directory.
 Clone the repo.
 Change the vars in `.env`
 
-```sh
-pip install yoursoftware
-```
-
 ## [Usage](#usage)
 
-`docker compose up`
+```
+docker compose up
+```
 
 ## [License](#license)
 
