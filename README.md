@@ -21,8 +21,8 @@ All data stays local in directory.
 
 ## [Installation](#installation)
 
-Clone the repo.
-Change the vars in `.env`
+* Clone the repo.
+* Change the vars in `.env`
 
 ## [Usage](#usage)
 
