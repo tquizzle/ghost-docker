@@ -6,6 +6,7 @@
 * [Installation](#installation)
 * [Usage](#usage)
 * [License](#license)
+* [Ack](#ack)
 
 
 ## [Introduction](#introduction)
@@ -23,9 +24,10 @@ All data stays local in directory:
 ## [Installation](#installation)
 
 * Clone the repo.
-* Change the vars in `.env`
 
 ## [Usage](#usage)
+
+* Change the vars in `.env`
 
 ```
 docker compose up
@@ -36,3 +38,7 @@ docker compose up
 This section should state any copyright asserted on the project materials as well as the terms of use for the software, files and other materials found in the project repository.
 
 Refer to the [license](LICENSE) for information specific.
+
+## [Acknowledgement](#ack)
+
+* [Ghost](https://ghost.org/)
