@@ -30,11 +30,10 @@ All data stays local in directory:
   * `ghost_port` = Your port to run Ghost on
   * `db_user`, `db_pass`, `db_db` = Ghost DB connection info (should match the user, pass, db below)
   * `mysql_*` = mysql information
-* Change the config in `configuration.production.json` if you wish to further customize the instance
-  * For `SMTP` mail configuration
+* Change the config in `configuration.production.json` if you wish to customize email on the app.
   * The `url` will show up in the footer of transactional emails
-  * If this is what you want, **ONLY** change the `url` and the `mail` config
-  * For SMTP settings, refer to [this article](https://ghost.org/docs/config/#mail).
+  * For `SMTP` mail configuration, refer to [this article](https://ghost.org/docs/config/#mail).
+  * **If this is what you want, ONLY change the** `url` and the `mail` config.
 
 ## [Usage](#usage)
 
