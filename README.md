@@ -17,6 +17,7 @@ All data stays local in directory:
 
 * `mysql` for all DB data.
 * `content` for all Ghost related data.
+* `configuration.production.json` for specific config manipulation if needed
 
 [![Docker Image CI](https://github.com/tquizzle/ghost-docker/actions/workflows/docker-image.yml/badge.svg)](https://github.com/tquizzle/ghost-docker/actions/workflows/docker-image.yml)
 
@@ -24,13 +25,21 @@ All data stays local in directory:
 ## [Installation](#installation)
 
 * Clone the repo.
+* Change the vars in `.env`
+  * `ghost_url` = Your http(s) address
+  * `ghost_port` = Your port to run Ghost on
+  * `db_user`, `db_pass`, `db_db` = Ghost DB connection info (should match the user, pass, db below)
+  * `mysql_*` = mysql information
+* Change the config in `configuration.production.json` if you wish to further customize the instance
+  * For `SMTP` mail configuration
+  * The `url` will show up in the footer of transactional emails
+  * If this is what you want, **ONLY** change the `url` and the `mail` config
+  * For SMTP settings, refer to [this article](https://ghost.org/docs/config/#mail).
 
 ## [Usage](#usage)
 
-* Change the vars in `.env`
-
 ```
-docker compose up
+docker compose up -d
 ```
 
 ## [License](#license)
@@ -42,3 +51,4 @@ Refer to the [license](LICENSE) for information specific.
 ## [Acknowledgement](#ack)
 
 * [Ghost](https://ghost.org/)
+* My :brain:
