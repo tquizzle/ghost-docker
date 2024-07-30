@@ -2,9 +2,7 @@ version: "3.3"
 services:
   ghost:
     build: .
-    #image: ghost-docker
-    name: ghost
-    env_file: .env
+    container_name: ghost
     restart: always
     ports:
       - "${ghost_port}:2368"
@@ -25,12 +23,11 @@ services:
 
   db:
     image: mysql:8.0
-    env_file: .env
     restart: always
     environment:
       MYSQL_ROOT_PASSWORD: ${mysql_root_pass}
-      MYSQL_USER: ${mysql_user}
-      MYSQL_PASSWORD: ${mysql_pass}
-      MYSQL_DATABASE: ${mysql_db}
+      MYSQL_USER: ${db_user}
+      MYSQL_PASSWORD: ${db_pass}
+      MYSQL_DATABASE: ${db_db}
     volumes:
       - ./mysql:/var/lib/mysql
