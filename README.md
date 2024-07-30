@@ -28,7 +28,7 @@ All data stays local in directory:
 * Rename the `.env.sample` and change the vars
   * `ghost_url` = Your http(s) address
   * `ghost_port` = Your port to run Ghost on
-  * `db_user`, `db_pass`, `db_db` = Ghost DB connection info (should match the user, pass, db below)
+  * `db_user`, `db_pass`, `db_db` = Ghost DB connection info 
   * `mysql_root_pass` = mysql root pass 
 * Change the config in `configuration.production.json` if you wish to customize email on the app.
   * The `url` will show up in the footer of transactional emails
