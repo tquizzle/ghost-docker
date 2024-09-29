@@ -1,0 +1,39 @@
+name: Trivy Container Image Scan - Latest
+
+on:
+    push:
+     branches: [ "master" ]
+    pull_request:
+      branches: [ "master" ]
+    workflow_dispatch:
+
+jobs:
+  build:
+    name: Build
+    runs-on: ubuntu-20.04
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+## Build and scan Latest image
+      - name: Build an image from Dockerfile - latest
+        uses: docker/build-push-action@v6.7.0
+        with:
+          context: .
+          file: ./Dockerfile
+          push: false
+          tags: tquinnelly/ghost-docker:${{ github.sha }} 
+
+      - name: Run Trivy vulnerability scanner - latest
+        uses: aquasecurity/trivy-action@0.24.0
+        with:
+          image-ref: 'docker.io/tquinnelly/ghost-docker:${{ github.sha }}'
+          format: 'sarif'
+          output: 'trivy-results.sarif'
+
+## Upload to Security tab
+      - name: Upload Trivy scan results to GitHub Security tab
+        uses: github/codeql-action/upload-sarif@v3
+        if: always()
+        with:
+          sarif_file: 'trivy-results.sarif'
