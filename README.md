@@ -30,10 +30,10 @@ All data stays local in directory:
   * `ghost_port` = Your port to run Ghost on
   * `db_user`, `db_pass`, `db_db` = Ghost DB connection info 
   * `mysql_root_pass` = mysql root pass 
+  * `mail_transport`, `smtp_host`, `smtp_port`, `smtp_from`, `smtp_user`, `smtp_password` = SMTP mail config
 * Change the config in `configuration.production.json` if you wish to customize email on the app.
   * The `url` will show up in the footer of transactional emails
-  * For `SMTP` mail configuration, refer to [this article](https://ghost.org/docs/config/#mail).
-  * **If this is what you want, ONLY change the** `url` and the `mail` config.
+  * For `SMTP` mail configuration, refer to [this article](https://ghost.org/docs/config/#mail) for more info.
 
 ## [Usage](#usage)
 
@@ -46,8 +46,3 @@ docker compose up -d
 This section should state any copyright asserted on the project materials as well as the terms of use for the software, files and other materials found in the project repository.
 
 Refer to the [license](LICENSE) for information specific.
-
-## [Acknowledgement](#ack)
-
-* [Ghost](https://ghost.org/)
-* My :brain:
