@@ -1,33 +1,45 @@
-version: "3.3"
 services:
   ghost:
     build: .
     container_name: ghost
     restart: always
     ports:
-      - "${ghost_port}:2368"
+      - "${GHOST_PORT}:2368"
     depends_on:
-      - db
+      db:
+        condition: service_healthy
     environment:
-      url: ${ghost_url}
+      url: ${GHOST_URL}
       database__client: mysql
       database__connection__host: db
-      database__connection__user: ${db_user}
-      database__connection__password: ${db_pass}
-      database__connection__database: ${db_db}
+      database__connection__user: ${DB_USER}
+      database__connection__password: ${DB_PASS}
+      database__connection__database: ${DB_DB}
+      mail__transport: ${MAIL_TRANSPORT:-SMTP}
+      mail__from: ${SMTP_FROM}
+      mail__options__host: ${SMTP_HOST}
+      mail__options__name: ${SMTP_HOST}
+      mail__options__port: ${SMTP_PORT:-587}
+      mail__options__auth__user: ${SMTP_USER}
+      mail__options__auth__pass: ${SMTP_PASSWORD}
     volumes:
       - ./content:/var/lib/ghost/content
-      - ./config.production.json:/var/lib/ghost/config.production.json
-    entrypoint: ["wait-for-sql.sh", "db", "--", "docker-entrypoint.sh"]
+    #  - ./config.production.json:/var/lib/ghost/config.production.json
+    # entrypoint: ["wait-for-sql.sh", "db", "--", "docker-entrypoint.sh"]
     command: ["node", "current/index.js"]
 
   db:
     image: mysql:8.0
     restart: always
     environment:
-      MYSQL_ROOT_PASSWORD: ${mysql_root_pass}
-      MYSQL_USER: ${db_user}
-      MYSQL_PASSWORD: ${db_pass}
-      MYSQL_DATABASE: ${db_db}
+      MYSQL_ROOT_PASSWORD: ${MYSQL_ROOT_PASS}
+      MYSQL_USER: ${DB_USER}
+      MYSQL_PASSWORD: ${DB_PASS}
+      MYSQL_DATABASE: ${DB_DB}
     volumes:
       - ./mysql:/var/lib/mysql
+    healthcheck:
+      test: ["CMD", "mysqladmin", "ping", "-h", "localhost"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
