@@ -15,7 +15,7 @@ services:
       database__connection__user: ${DB_USER}
       database__connection__password: ${DB_PASS}
       database__connection__database: ${DB_DB}
-      mail__transport: ${MAIL_TRANSPORT:-SMTP}
+      mail__transport: ${MAIL_TRANSPORT}
       mail__from: ${SMTP_FROM}
       mail__options__host: ${SMTP_HOST}
       mail__options__name: ${SMTP_HOST}
@@ -24,8 +24,6 @@ services:
       mail__options__auth__pass: ${SMTP_PASSWORD}
     volumes:
       - ./content:/var/lib/ghost/content
-    #  - ./config.production.json:/var/lib/ghost/config.production.json
-    # entrypoint: ["wait-for-sql.sh", "db", "--", "docker-entrypoint.sh"]
     command: ["node", "current/index.js"]
 
   db:
@@ -42,4 +40,4 @@ services:
       test: ["CMD", "mysqladmin", "ping", "-h", "localhost"]
       interval: 10s
       timeout: 5s
-      retries: 5
+      retries: 15
