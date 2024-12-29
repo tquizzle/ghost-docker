@@ -1,0 +1,15 @@
+title: Ghost CMS Docker Documentation
+description: Ghost CMS Docker Documentation
+remote_theme: carlosperate/jekyll-theme-rtd
+
+# Theme settings
+site_author: TQ
+repo_url: https://github.com/tquizzle/ghost-docker
+github_docs_folder: true
+sticky_navigation: true
+edit_on_github: false
+prev_next_buttons_location: bottom
+search_enabled: true
+hljs_style: github-gist
+#logo: 'https://raw.githubusercontent.com/tquizzle/clamav-alpine/refs/heads/master/img/clamav-docker.png'
+#site_favicon: 'https://raw.githubusercontent.com/tquizzle/clamav-alpine/refs/heads/master/img/favicon.ico'
