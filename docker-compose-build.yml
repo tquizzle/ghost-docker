@@ -1,6 +1,6 @@
 services:
   ghost:
-    image: ghost:latest
+    build: .
     container_name: ghost
     restart: always
     ports:
