@@ -8,7 +8,6 @@ All data stays local in directory:
 
 * `mysql` for all DB data.
 * `content` for all Ghost related data.
-* `configuration.production.json` for specific config manipulation if needed
 
 [![Docker Image CI](https://github.com/tquizzle/ghost-docker/actions/workflows/docker-image.yml/badge.svg)](https://github.com/tquizzle/ghost-docker/actions/workflows/docker-image.yml)
 
