@@ -1,6 +1,7 @@
 title: Ghost CMS Docker Documentation
 description: Ghost CMS Docker Documentation
-remote_theme: carlosperate/jekyll-theme-rtd
+#remote_theme: carlosperate/jekyll-theme-rtd
+remote_theme: sighingnow/jekyll-gitbook
 
 # Theme settings
 site_author: TQ
@@ -16,3 +17,4 @@ hljs_style: github-gist
 nav:
   - Home: index.md
   - License: license.md
+syntax_highlighter_style: colorful
