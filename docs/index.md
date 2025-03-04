@@ -1,4 +1,3 @@
-# Ghost Docker
 
 ## [Introduction](#introduction)
 
