@@ -1,7 +1,7 @@
 # Configurations
 title: Ghost CMS Docker Documentation
 description: A theme for documentation
-baseurl: "/clamav-alpine/" # the subpath of your site, e.g. /blog
+baseurl: "/ghost-docker" # the subpath of your site, e.g. /blog
 url: "https://tquizzle.github.io" # the base hostname & protocol for your site, e.g. http://example.com
 repository: tquizzle/ghost-docker # for github-metadata
 remote_theme: just-the-docs/just-the-docs
@@ -17,31 +17,6 @@ defaults:
 
 exclude:
   # from https://github.com/jekyll/jekyll/blob/master/lib/site_template/_config.yml:
-  - .sass-cache/
-  - .jekyll-cache/
-  - gemfiles/
-  - Gemfile
-  - Gemfile.lock
-  - node_modules/
-  - vendor/bundle/
-  - vendor/cache/
-  - vendor/gems/
-  - vendor/ruby/
-  # specific to the theme website:
-  - bin/
-  - lib/
-  - "*.gemspec"
-  - "*.gem"
-  - LICENSE.txt
-  - package.json
-  - package-lock.json
-  - Rakefile
-  - README.md
-  - CODE_OF_CONDUCT.md
-  - docker-compose.yml
-  - Dockerfile
-  # theme test code
-  - fixtures/
 
 # Set a path/url to a logo that will be displayed instead of the title
 #logo: "/assets/images/just-the-docs.png"
@@ -101,7 +76,7 @@ aux_links:
     - "https://github.com/tquizzle"
 
 # Makes Aux links open in a new tab. Default is false
-aux_links_new_tab: false
+aux_links_new_tab: true
 
 # Enable or disable the side/mobile menu globally
 # Nav menu can also be selectively enabled or disabled using page variables or the minimal layout
