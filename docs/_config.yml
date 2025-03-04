@@ -1,20 +1,97 @@
+# Configurations
 title: Ghost CMS Docker Documentation
-description: Ghost CMS Docker Documentation
-#remote_theme: carlosperate/jekyll-theme-rtd
+logtitle: Ghost CMS Docker Documentation
+author:           Travis Quinnelly
+email:            
+description: >
+  A simple way to spin up a Ghost site using MySQL as the backend and docker-compose.
+
+version:          1.0
+gitbook_version:  3.2.3
+
+url:              'https://tquizzle.github.io/'
+baseurl:          '/ghost-docker'
+rss:              RSS
+
+# bootstrap: use the remote theme for the site itself
 remote_theme: sighingnow/jekyll-gitbook
 
+toc:
+  enabled: true
+  h_min:   1
+  h_max:   3
+
+# customize the link favicon in header, will be {{site.baseurl}}/{{site.favicon_path}}
+favicon_path:     /assets/gitbook/images/favicon.ico
+
+# markdown render engine.
+markdown:         kramdown
+kramdown:
+  auto_ids:               true
+  input:                  GFM
+  math_engine:            mathjax
+  smart_quotes:           lsquo,rsquo,ldquo,rdquo
+  toc_levels:             1..6
+  syntax_highlighter:     rouge
+  syntax_highlighter_opts:
+    guess_lang:           true
+
+syntax_highlighter_style: colorful
+
+markdown_ext:             markdown,mkdown,mkdn,mkd,md
+
+# Permalinks
+permalink:                /:categories/:year-:month-:day-:title:output_ext
+
+# Disqus comments
+# disqushandler:            sighingnow
+
+#exclude:
+#  - _drafts
+
+#collections:
+#  pages:
+#    output: true
+##    permalink: /:collection/:path/
+#  others:
+#    output: true
+#    permalink: /:collection/:path/
+
+#ordered_collections:
+#  - posts
+#  - pages
+#  - others
+
+page_width: 800px
+
+#destination:      ./_site
+#incremental:      false
+regenerate:       true
+
+plugins:
+  - jekyll-feed
+  - jekyll-readme-index
+  - jemoji
+
+
+
+#title: Ghost CMS Docker Documentation
+#description: Ghost CMS Docker Documentation
+#remote_theme: carlosperate/jekyll-theme-rtd
+#remote_theme: sighingnow/jekyll-gitbook
+
 # Theme settings
-site_author: TQ
-repo_url: https://github.com/tquizzle/ghost-docker
-github_docs_folder: true
-sticky_navigation: true
-edit_on_github: false
-prev_next_buttons_location: bottom
-search_enabled: true
-hljs_style: github-gist
+#site_author: TQ
+#repo_url: https://github.com/tquizzle/ghost-docker
+#github_docs_folder: true
+#sticky_navigation: true
+#edit_on_github: false
+#prev_next_buttons_location: bottom
+#search_enabled: true
+#hljs_style: github-gist
 #logo: 'https://raw.githubusercontent.com/tquizzle/clamav-alpine/refs/heads/master/img/clamav-docker.png'
 #site_favicon: 'https://raw.githubusercontent.com/tquizzle/clamav-alpine/refs/heads/master/img/favicon.ico'
-nav:
-  - Home: index.md
-  - License: license.md
-syntax_highlighter_style: colorful
+#nav:
+#  - Home: index.md
+#  - License: license.md
+#syntax_highlighter_style: colorful
