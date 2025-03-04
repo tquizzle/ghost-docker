@@ -1,6 +1,6 @@
 # Configurations
 title: Ghost CMS Docker Documentation
-description: A Jekyll theme for documentation
+description: A theme for documentation
 baseurl: "/clamav-alpine/" # the subpath of your site, e.g. /blog
 url: "https://tquizzle.github.io" # the base hostname & protocol for your site, e.g. http://example.com
 repository: tquizzle/ghost-docker # for github-metadata
