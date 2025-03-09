@@ -27,7 +27,7 @@ services:
     command: ["node", "current/index.js"]
 
   db:
-    image: mysql:8.4
+    image: mysql:9.2@sha256:146682692a3aa409eae7b7dc6a30f637c6cb49b6ca901c2cd160becc81127d3b
     restart: always
     environment:
       MYSQL_ROOT_PASSWORD: ${MYSQL_ROOT_PASS}
