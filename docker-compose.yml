@@ -1,6 +1,6 @@
 services:
   ghost:
-    image: ghost:latest
+    image: ghost:latest@sha256:14b392e299db38cf8907570f960b7ea55d8cd9386643252dfde6d33a82dcd2c3
     container_name: ghost
     restart: always
     ports:
@@ -27,7 +27,7 @@ services:
     command: ["node", "current/index.js"]
 
   db:
-    image: mysql:9.2
+    image: mysql:9.2@sha256:0596fa224cdf3b3355ce3ddbfd7ce77be27ec9e51841dfc5d2e1c8b81eea69d2
     restart: always
     environment:
       MYSQL_ROOT_PASSWORD: ${MYSQL_ROOT_PASS}
