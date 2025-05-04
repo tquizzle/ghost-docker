@@ -1,7 +1,6 @@
 .DS_Store
 .env
 .github/**
-docs/**
 mysql/**
 content/**
 themes/**
