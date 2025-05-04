@@ -1,4 +1,4 @@
-FROM ghost:latest@sha256:97b8f6948c06c4716467cedf856747612b270b7a5ede021101f19112e42cd10a
+FROM ghost:latest@sha256:5e3f47f8aaba9c72de766ee9f1a65a4dbaab47694eb4b00158a87f446816b331
 RUN apt update -y && apt upgrade -y && \
     apt install -y default-mysql-client && \
     rm -rf /var/cache/apt/lists
