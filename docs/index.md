@@ -15,6 +15,7 @@ All data stays local in directory:
 ## [Installation](#installation)
 
 * Clone the repo.
+  * `git clone https://github.com/tquizzle/ghost-docker.git`
 * Rename the `.env.sample` and change the vars
   * `ghost_url` = Your http(s) address
   * `ghost_port` = Your port to run Ghost on
