@@ -29,7 +29,7 @@ jobs:
         images: ${{ secrets.DOCKER_USERNAME }}/ghost-docker
     
     - name: Push it - Latest
-      uses: docker/build-push-action@v6.16.0
+      uses: docker/build-push-action@v6.17.0
       with:
         context: .
         file: ./Dockerfile
