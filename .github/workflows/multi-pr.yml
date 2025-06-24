@@ -1,0 +1,14 @@
+name: Multi-PR
+
+on:
+  workflow_dispatch:
+
+jobs:
+  pr:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Combine PRs
+        uses: bobvanderlinden/combine-pull-requests@v4
+        with:
+          label: multi-pr
+          repo-token: ${{ secrets.GITHUB_TOKEN }}
