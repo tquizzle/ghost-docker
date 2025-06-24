@@ -7,6 +7,9 @@ jobs:
   pr:
     runs-on: ubuntu-latest
     steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
       - name: Combine PRs
         uses: bobvanderlinden/combine-pull-requests@v4
         with:
