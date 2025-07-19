@@ -13,23 +13,13 @@
   "assignees": [
     "tquizzle"
   ],
-   "gitAuthor": "Renovate Bot <bot@renovateapp.com>",
-   "packageRules": [
+  "gitAuthor": "Renovate Bot <bot@renovateapp.com>",
+  "packageRules": [
     {
-      "matchDatasources": ["docker"],
-      "minimumReleaseAge": "1 day",
-      "matchPackagePatterns": ["*"],
-      "matchUpdateTypes": ["minor", "patch"],
-      "groupName": "all non-major dependencies",
-      "groupSlug": "all-minor-patch",
+      "matchUpdateTypes": ["minor", "patch", "pin", "digest"],
       "automerge": true,
       "automergeType": "branch",
-      "extends": [
-        "schedule:weekends"
-      ],
-      "matchPackageNames": [
-        "*"
-      ]
+      "minimumReleaseAge": "1 day"
     }
   ]
 }
