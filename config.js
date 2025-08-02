@@ -89,10 +89,10 @@ module.exports = {
         icon: 'rocket',
         path: '#',
         children: [
-          { title: 'Intro', path: '#introductionintroduction', icon: 'scroll', external: true },
-          { title: 'Installation', path: '#installationinstallation', icon: 'download', external: true },
-          { title: 'Basic Usage', path: '#usageusage', icon: 'play', external: true },
-          { title: 'License', path: '#licenselicense', icon: 'file-text', external: true },
+          { title: 'Intro', path: '#introductionintroduction', icon: 'scroll', external: false },
+          { title: 'Installation', path: '#installationinstallation', icon: 'download', external: false },
+          { title: 'Basic Usage', path: '#usageusage', icon: 'play', external: false },
+          { title: 'License', path: '#licenselicense', icon: 'file-text', external: false },
         ],
       },
       // External links:
@@ -101,7 +101,7 @@ module.exports = {
 
   // Sponsor Ribbon Configuration
   Sponsor: {
-    enabled: false,
+    enabled: true,
     title: 'Support me',
     link: 'https://github.com/sponsors/tquizzle',
   },
