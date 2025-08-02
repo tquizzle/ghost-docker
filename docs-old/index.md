@@ -1,9 +1,4 @@
----
-title: "Ghost Docker Documentation"
-description: "The documentation for the Ghost Docker project."
----
-
-# Ghost Docker Documentation
+# Ghost Docker
 
 ## [Introduction](#introduction)
 
