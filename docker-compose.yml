@@ -1,6 +1,6 @@
 services:
   ghost:
-    image: ghost:latest@sha256:687c36b811910d5950de8874e6bd79cd77aa01958a74a63bd578ca54a6401a81
+    image: ghost:latest@sha256:b3a48667f4b009376af1719c5f886c7ef476a5f43c0af2aa26957eb4a54a8437
     container_name: ghost
     restart: ${GHOST_RESTART}:always
     ports:
@@ -33,7 +33,7 @@ services:
       start_period: 30s
 
   db:
-    image: mysql:9.3@sha256:072f96c2f1ebb13f712fd88d0ef98f2ef9a52ad4163ae67b550ed6720b6d642e
+    image: mysql:9.4@sha256:082063dca94535c76b91c6ef9b9f6748810e546887af5e8574a8cfa11eace184
     restart: always
     environment:
       MYSQL_ROOT_PASSWORD: ${MYSQL_ROOT_PASS}
