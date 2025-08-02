@@ -89,27 +89,26 @@ module.exports = {
         icon: 'rocket',
         path: '#',
         children: [
-          { title: 'Documentation', path: 'https://docmd.mgks.dev', icon: 'scroll', external: true },
+        //  { title: 'Documentation', path: '#', icon: 'scroll', external: true },
           { title: 'Installation', path: '#installation', icon: 'download', external: true },
           { title: 'Basic Usage', path: '#usage', icon: 'play', external: true },
           { title: 'License', path: '#license', icon: 'file-text', external: true },
         ],
       },
       // External links:
-      { title: 'GitHub', path: 'https://github.com/mgks/docmd', icon: 'github', external: true },
-      { title: 'Support the Project', path: 'https://github.com/sponsors/mgks', icon: 'heart', external: true },
+      { title: 'GitHub', path: 'https://github.com/tquizzle', icon: 'github', external: true },
     ],
 
   // Sponsor Ribbon Configuration
   Sponsor: {
     enabled: false,
-    title: 'Support docmd',
-    link: 'https://github.com/sponsors/mgks',
+    title: 'Support me',
+    link: 'https://github.com/sponsors/tquizzle',
   },
 
   // Footer Configuration
   // Markdown is supported here.
-  footer: '© ' + new Date().getFullYear() + ' Project.',
+  footer: '© ' + new Date().getFullYear() + ' Ghost Docker.',
 
   // Favicon Configuration
   // Path relative to outputDir root
