@@ -2,7 +2,7 @@ services:
   ghost:
     image: ghost:latest@sha256:687c36b811910d5950de8874e6bd79cd77aa01958a74a63bd578ca54a6401a81
     container_name: ghost
-    restart: always
+    restart: ${GHOST_RESTART}:always
     ports:
       - "${GHOST_PORT}:2368"
     depends_on:
@@ -25,6 +25,12 @@ services:
     volumes:
       - ./content:/var/lib/ghost/content
     command: ["node", "current/index.js"]
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:2368/ghost/"]
+      interval: 30s
+      timeout: 10s
+      retries: 2
+      start_period: 30s
 
   db:
     image: mysql:9.3@sha256:072f96c2f1ebb13f712fd88d0ef98f2ef9a52ad4163ae67b550ed6720b6d642e
