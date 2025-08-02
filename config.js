@@ -89,10 +89,10 @@ module.exports = {
         icon: 'rocket',
         path: '#',
         children: [
-        //  { title: 'Documentation', path: '#', icon: 'scroll', external: true },
-          { title: 'Installation', path: '#installation', icon: 'download', external: true },
-          { title: 'Basic Usage', path: '#usage', icon: 'play', external: true },
-          { title: 'License', path: '#license', icon: 'file-text', external: true },
+          { title: 'Intro', path: '#introductionintroduction', icon: 'scroll', external: true },
+          { title: 'Installation', path: '#installationinstallation', icon: 'download', external: true },
+          { title: 'Basic Usage', path: '#usageusage', icon: 'play', external: true },
+          { title: 'License', path: '#licenselicense', icon: 'file-text', external: true },
         ],
       },
       // External links:

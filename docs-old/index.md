@@ -31,8 +31,7 @@ docker compose up -d
 
 ## [License](#license)
 
-This section should state any copyright asserted on the project materials as well as the terms of use for the software, files and other materials found in the project repository.
-
-Refer to the [license](./license) for information specific.
+Apache License 2.0 is licensed under the Apache License, Version 2.0 (the "License"). You may not use this file except in compliance with the License. You may obtain a copy of the License at http://www.apache.org/licenses/LICENSE.txt
+Refer to the [license](/docs/license.md) for information specific.
 
 ![tianji](https://tianji.tq.network/telemetry/clnzoxcy10001vy2ohi4obbi0/cma9oq4a010nsmitp60zwek2l.gif)
