@@ -8,10 +8,10 @@ module.exports = {
 
   // Logo Configuration
   logo: {
-    light: '/assets/images/docmd-logo-light.png', // Path relative to outputDir root
-    dark: '/assets/images/docmd-logo-dark.png',   // Path relative to outputDir root
-    alt: 'docmd logo',                      // Alt text for the logo
-    href: '/',                              // Link for the logo, defaults to site root
+    light: '/assets/images/ghost-docker.png', // Path relative to outputDir root
+    dark: '/assets/images/ghost-docker.png',   // Path relative to outputDir root
+    alt: 'ghost docker logo',                      // Alt text for the logo
+    href: '#',                              // Link for the logo, defaults to site root
   },
 
   // Directory Configuration
@@ -83,7 +83,7 @@ module.exports = {
   // Navigation Structure (Sidebar)
   // Icons are kebab-case names from Lucide Icons (https://lucide.dev/)
   navigation: [
-      { title: 'Welcome', path: '/', icon: 'home' }, // Corresponds to docs/index.md
+      { title: 'Welcome', path: '#welcomewelcome', icon: 'home' }, // Corresponds to docs/index.md
       {
         title: 'Getting Started',
         icon: 'rocket',
