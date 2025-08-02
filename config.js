@@ -90,9 +90,9 @@ module.exports = {
         path: '#',
         children: [
           { title: 'Documentation', path: 'https://docmd.mgks.dev', icon: 'scroll', external: true },
-          { title: 'Installation', path: 'https://docmd.mgks.dev/getting-started/installation', icon: 'download', external: true },
-          { title: 'Basic Usage', path: 'https://docmd.mgks.dev/getting-started/basic-usage', icon: 'play', external: true },
-          { title: 'Content', path: 'https://docmd.mgks.dev/content', icon: 'layout-template', external: true },
+          { title: 'Installation', path: '#installation', icon: 'download', external: true },
+          { title: 'Basic Usage', path: '#usage', icon: 'play', external: true },
+          { title: 'License', path: '#license', icon: 'file-text', external: true },
         ],
       },
       // External links:
