@@ -1,6 +1,6 @@
 services:
   ghost:
-    image: ghost:latest@sha256:060e7e206215871eb1577e3de3aed0524e9430b6cef661b0baa9c357de28c724
+    image: ghost:latest@sha256:0ecd26628436bbb176b3578da77c1b4fbb0620631b089ccc1e88eb26bfc43b9e
     container_name: ghost
     restart: ${GHOST_RESTART}:always
     ports:
