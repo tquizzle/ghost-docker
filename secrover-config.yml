@@ -1,0 +1,6 @@
+project:
+  name: Secrover
+repos:
+  - url: https://github.com/tquizzle/ghost-docker.git
+    branch: main
+    description: Ghost Docker Builds
