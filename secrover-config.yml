@@ -1,5 +1,7 @@
 project:
-  name: Secrover
+  name: Ghost Docker
+domains:
+  - https://tquizzle.github.io/ghost-docker/
 repos:
   - url: https://github.com/tquizzle/ghost-docker.git
     branch: main
