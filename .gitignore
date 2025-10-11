@@ -4,3 +4,7 @@
 mysql/**
 content/**
 themes/**
+docs-old/**
+node_modules/**
+dist/**
+.vscode/**
