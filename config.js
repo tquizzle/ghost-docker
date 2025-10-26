@@ -95,9 +95,9 @@ module.exports = {
           { title: 'License', path: '#', icon: 'file-text', external: false },
         ],
       },
-      { title: 'Secrover', path: '/secrover/', icon: 'shield-plus', external: false },
       // External links:
-      { title: 'GitHub', path: 'https://github.com/tquizzle', icon: 'github', external: true },
+     { title: 'Secrover', path: '/secrover/', icon: 'shield-plus', external: true },
+     { title: 'GitHub', path: 'https://github.com/tquizzle', icon: 'github', external: true },
     ],
 
   // Sponsor Ribbon Configuration
