@@ -96,7 +96,7 @@ module.exports = {
         ],
       },
       // External links:
-     { title: 'Secrover', path: '/secrover/', icon: 'shield-plus', external: true },
+     { title: 'Secrover', path: 'secrover/', icon: 'shield-plus', external: true },
      { title: 'GitHub', path: 'https://github.com/tquizzle', icon: 'github', external: true },
     ],
 
