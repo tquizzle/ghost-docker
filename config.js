@@ -11,7 +11,7 @@ module.exports = {
     light: '/assets/images/ghost-docker.png', // Path relative to outputDir root
     dark: '/assets/images/ghost-docker.png',   // Path relative to outputDir root
     alt: 'ghost docker logo',                      // Alt text for the logo
-    href: '#',                              // Link for the logo, defaults to site root
+    href: '/ghost-docker/',                              // Link for the logo, defaults to site root
   },
 
   // Directory Configuration
@@ -29,7 +29,7 @@ module.exports = {
     name: 'sky',            // Themes: 'default', 'sky'
     defaultMode: 'light',   // Initial color mode: 'light' or 'dark'
     enableModeToggle: true, // Show UI button to toggle light/dark modes
-    positionMode: 'bottom', // 'top' or 'bottom' for the theme toggle
+    positionMode: 'top', // 'top' or 'bottom' for the theme toggle
     customCss: [            // Array of paths to custom CSS files
       // '/assets/css/custom.css', // Custom TOC styles
     ]
@@ -52,7 +52,7 @@ module.exports = {
     // These are fallbacks or site-wide settings.
     seo: {
       // Default meta description if a page doesn't have one in its frontmatter
-      defaultDescription: 'docmd is a Node.js command-line tool for generating beautiful, lightweight static documentation sites from Markdown files.',
+      defaultDescription: 'Documentation for Ghost Docker - the Docker image for Ghost CMS with MySQL/MariaDB support.',
       openGraph: { // For Facebook, LinkedIn, etc.
         // siteName: 'docmd Documentation', // Optional, defaults to config.siteTitle
         // Default image for og:image if not specified in page frontmatter
@@ -83,20 +83,20 @@ module.exports = {
   // Navigation Structure (Sidebar)
   // Icons are kebab-case names from Lucide Icons (https://lucide.dev/)
   navigation: [
-      { title: 'Welcome', path: '#welcomewelcome', icon: 'home' }, // Corresponds to docs/index.md
+      { title: 'Welcome', path: '#', icon: 'home' }, // Corresponds to docs/index.md
       {
         title: 'Getting Started',
         icon: 'rocket',
         path: '#',
         children: [
           { title: 'Intro', path: '#', icon: 'scroll', external: false },
-          { title: 'Installation', path: '#', icon: 'download', external: false },
-          { title: 'Basic Usage', path: '#', icon: 'play', external: false },
-          { title: 'License', path: '#', icon: 'file-text', external: false },
+          { title: 'Installation', path: '#instalation', icon: 'download', external: false },
+          { title: 'Basic Usage', path: '#usage', icon: 'play', external: false },
+          { title: 'License', path: '#license', icon: 'file-text', external: false },
         ],
       },
       // External links:
-     { title: 'Secrover', path: 'secrover/', icon: 'shield-plus', external: true },
+     { title: 'Secrover', path: '/ghost-docker/secrover/', icon: 'shield-plus', external: false },
      { title: 'GitHub', path: 'https://github.com/tquizzle', icon: 'github', external: true },
     ],
 

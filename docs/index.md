@@ -21,12 +21,20 @@ All data stays local in directory:
 
 * Clone the repo.
   * `git clone https://github.com/tquizzle/ghost-docker.git`
-* Rename the `.env.sample` and change the vars
+* Rename the `.env.sample` to `.env` and change the vars
   * `ghost_url` = Your http(s) address
   * `ghost_port` = Your port to run Ghost on
-  * `db_user`, `db_pass`, `db_db` = Ghost DB connection info 
-  * `mysql_root_pass` = mysql root pass 
-  * `mail_transport`, `smtp_host`, `smtp_port`, `smtp_from`, `smtp_user`, `smtp_password` = SMTP mail config
+  * `db_user`= Ghost DB user
+  * `db_pass` = Ghost DB password
+  * `db_db` = Ghost DB name
+  * `mysql_root_pass` = mysql root password
+  * `mail_transport` =  SMTP mail transport method (e.g. SMTP)
+  * `smtp_host` =   SMTP mail host
+  * `smtp_port`= SMTP mail port
+  * `smtp_from`= SMTP mail from address
+  * `smtp_user`= SMTP mail user configuration, 
+  * `smtp_password` = SMTP mail password 
+
 
 ## [Usage](#usage)
 
