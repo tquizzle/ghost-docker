@@ -8,3 +8,6 @@ docs-old/**
 node_modules/**
 dist/**
 .vscode/**
+renovate.json
+zensical.json
+config.js
