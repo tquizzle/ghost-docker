@@ -44,8 +44,7 @@ docker compose up -d
 
 ## [License](#license)
 
-This section should state any copyright asserted on the project materials as well as the terms of use for the software, files and other materials found in the project repository.
-
+This project is licensed under the MIT License.
 Refer to the [license](./license) for information specific.
 
 ![tianji](https://tianji.tq.network/telemetry/clnzoxcy10001vy2ohi4obbi0/cma9oq4a010nsmitp60zwek2l.gif)
