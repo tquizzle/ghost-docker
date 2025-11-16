@@ -12,6 +12,5 @@ generator = true
 [[project.extra.social]]
 icon = "fontawesome/brands/x-twitter"
 link = "https://x.com/tquizzle"
-[[project.extra.social]]
-icon = "fontawesome/brands/linkedin"
-link = "https://www.linkedin.com/in/tquinnelly/"
+[project.markdown_extensions.admonition]
+[project.markdown_extensions.tables]
