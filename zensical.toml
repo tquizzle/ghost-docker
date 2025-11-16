@@ -1,0 +1,17 @@
+[project]
+site_name = "Ghost Docker"
+site_description = "A Dockerized Ghost Blogging Platform"
+site_author = "TQ"
+copyright = "&copy; 2025 TQ. All rights reserved."
+repo_url = "https://github.com/tquizzle/ghost-docker"
+[project.theme]
+logo = "assets/images/logo.png"
+favicon = "assets/images/favicon.ico"
+[project.extra]
+generator = true
+[[project.extra.social]]
+icon = "fontawesome/brands/x-twitter"
+link = "https://x.com/tquizzle"
+[[project.extra.social]]
+icon = "fontawesome/brands/linkedin"
+link = "https://www.linkedin.com/in/tquinnelly/"
