@@ -24,7 +24,7 @@ jobs:
     
     - name: Extract metadata (tags, labels) for Docker
       id: meta
-      uses: docker/metadata-action@8d8c7c12f7b958582a5cb82ba16d5903cb27976a
+      uses: docker/metadata-action@b13d25e5fcf2e04305d8aedc9a6c28ebe258e934
       with:
         images: ${{ secrets.DOCKER_USERNAME }}/ghost-docker
     
