@@ -15,7 +15,7 @@ jobs:
       GIT_AUTHOR_EMAIL: ${{ vars.GIT_AUTHOR_EMAIL }}  
     steps:
       - name: Checkout repo
-        uses: actions/checkout@v6
+        uses: actions/checkout@v7
         with:
           token: ${{ secrets.GH_PAT }}
       - name: Fetch gh-pages
